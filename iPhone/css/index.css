@@ -1,0 +1,41 @@
+*{margin: 0px auto;padding:0px;font-family:"微软雅黑";-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{background: url(../img/bg.jpg) no-repeat;background-size:100%;position: relative;}
+a{text-decoration: none;outline: none;}
+a:focus{outline: none;}
+li{list-style-type: none;}
+/*解决input按钮在Iphone上样式不一样的问题*/
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; } 
+/*外壳样式*/
+#iPhone{width: 350px;height:660px;background: #E5E3EC;border-radius: 14px;position: fixed;top: 50%;left: 50%;margin-top: -330px;margin-left: -170px;box-shadow: 9px 10px 10px 0px #7977A6; transition: box-shadow 0.3s;-moz-transition: box-shadow 0.3s;-webkit-transition: box-shadow 0.3s;}
+/*装饰口样式*/
+#iPhone_K{background: #979799;width: 60px;height: 4px;margin-top: 24px;border-radius: 6px;}
+/*装饰按钮样式*/
+#iPhone_img{width: 50px;height: 40px;background: url(../img/miaov.png) no-repeat;position: absolute;bottom: 16px;left: 50%;margin-left: -25px;cursor: pointer;}
+/*聊天显示框样式*/
+#iPhone_square{position: relative;border:2px solid #A6A5AD;width: 320px;height: 490px;margin-top: 20px;background: #FFFFFF;overflow-y:auto;overflow-x:hidden;border-bottom: none;padding: 10px 0 20px 0;}
+/*角色切换按钮样式*/
+#iPhone_role{width: 35px;height: 40px;float: left;margin-top: 5px;margin-left: 10px;cursor: pointer;}
+/*输入框样式*/
+#iPhone_Cose{width: 184px;height: 32px;padding: 4px 10px;text-align: left;margin-left: 8px;border-radius: 6px;border:1px solid #A6A5AD;outline: none;color: #5D5D5D;}
+/*发送按钮样式*/
+#iPhone_Sendout{padding: 5px;color:#FFFFFF;border:none;background: #D25A61;border-radius: 6px;width: 60px;height:34px;padding: 4px 10px;margin-top: 9px;cursor: pointer;outline:none;font-size: 15px;margin-left: 5px;transition: all 0.4s;}
+#iPhone_Sendout:hover{background:#F5A7AA;}
+/*聊天栏样式*/
+#iPhone_Chat{position: absolute;width: 320px;height:50px;background:#E3E3E3;top: 536px;left: 50%;margin-left: -160px;border:2px solid #A6A5AD;border-top: none;}
+/*样式1*/
+#Cose_one,#Cose_two{width: 100%;position: relative;margin: 16px 0;display: block;float: right;}
+#Cose_one,#Cose_two:after{clear: both;}
+#Cose_one img:nth-child(1){position: absolute;top: 16px;left: 6px;}
+.Cose_div{display:inline-block;max-width: 220px;float:left;clear:both;margin-left:54px;padding: 12px;background: #E1E1E1;border-radius: 6px;color: #272727;text-align:justify;word-break: break-word;}
+.Arrow{position: absolute;top: 26px;left: 49px;}
+/*样式2*/
+#Cose_two img:nth-child(1){position: absolute;top: 16px;right: 6px;}
+.Cose_div2{display:inline-block;margin-right:54px;float:right;clear:both;max-width: 220px;padding: 12px;background: #DC728C;border-radius: 6px;color: #272727;text-align:justify;color: #FFFFFF;word-break: break-word;}
+.Arrow2{position: absolute;top: 26px;right: 49px;}
+
+
+
+
+
+
+

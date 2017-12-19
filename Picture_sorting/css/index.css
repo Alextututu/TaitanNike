@@ -1,0 +1,39 @@
+*{margin: 0px auto;padding:0px;font-family:"微软雅黑";-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{background: #A590E5;}
+a{text-decoration: none;outline: none;}
+a:focus{outline: none;}
+li{list-style-type: none;}
+/*解决input按钮在Iphone上样式不一样的问题*/
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; } 
+/*上面两个按钮样式*/
+header{margin-top: 100px;text-align: center;width: 100%;border: 1px solid transparent;}
+header div{width: 360px;}
+header p{float: left;border-radius: 20px;padding: 8px;color: #000000;background: rgba(255,255,255,0.7);width: 140px;margin: 0 20px;height: 44px;line-height: 28px;cursor: pointer;font-size: 24px;transition: 0.3s;}
+header p:hover , .phover{color: #FFFFFF;background: rgba(0,0,0,0.7);}
+header p:after{clear: both;}
+/*下面li块样式*/
+footer{width: 1120px;margin-top: 100px;}
+footer:after{clear: both;}
+footer ul{width: 100%;float: left;position: relative;}
+footer ul li{width:240px;height: 240px;float: left;padding: 20px;position: relative;color: #FFFFFF;text-align: center;font-size: 40px;line-height: 200px;margin: 20px;z-index: 2;border-radius:10px ;overflow: hidden;cursor:pointer;transition: 0.3s;}
+#aOne{background: -webkit-linear-gradient(-45deg, #FFC1F2, #FF0089); }
+#bTwo{background: -webkit-linear-gradient(-45deg, #FF62DB, #FFFC90); }
+#cThree{background: -webkit-linear-gradient(-45deg, #FFF500, #8BD13E); }
+#dFour{background: -webkit-linear-gradient(-45deg, #8DCA56, #44BDCC); }
+#eFive{background: -webkit-linear-gradient(-45deg, #41AED5, #5151AC); }
+#fSix{background: -webkit-linear-gradient(-45deg, #67AAFF, #7C00FF); }
+#gSeven{background: -webkit-linear-gradient(-45deg, #FF97DB, #8852FD); }
+#hEight{background: -webkit-linear-gradient(-45deg, #A200FF, #FF0005); }
+footer ul li:hover::before{left: 128%;transition:0.4s;}
+footer ul li:hover{box-shadow: 0px 0px 30px 0px #272822;transition: box-shadow 0.3s;-moz-transition: box-shadow 0.3s;-webkit-transition: box-shadow 0.3s;}
+footer ul li::before{content: '';background: rgba(255, 255, 255, 0.3);height: 100%;width: 50px;position: absolute;top: 0%;left: -50%;transform: skew(-30deg);transition: 0s;}
+footer ul span{position: absolute;padding: 4px;color:#635197;background: #FFFFFF;border-radius: 20px;width: 140px;height: 30px;bottom: -14px;left: 50%;margin-left: -70px;font-size: 16px;z-index: 999;text-align: center;box-shadow: 0px 0px 14px 0px #626262;transition: box-shadow 0.3s;-moz-transition: box-shadow 0.3s;-webkit-transition: box-shadow 0.3s;line-height: 24px;}
+footer ul span:nth-child(2){top: 244px;left: 140px;}
+footer ul span:nth-child(4){top: 244px;left: 421px;}
+footer ul span:nth-child(6){top: 244px;left: 701px;}
+footer ul span:nth-child(8){top: 244px;left: 980px;}
+footer ul span:nth-child(10){top: 524px;left: 140px;}
+footer ul span:nth-child(12){top: 524px;left: 421px;}
+footer ul span:nth-child(14){top: 524px;left: 701px;}
+footer ul span:nth-child(16){top: 524px;left: 980px;}
+

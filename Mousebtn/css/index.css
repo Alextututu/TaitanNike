@@ -1,0 +1,40 @@
+*{margin: 0px auto;padding:0px;font-family:"微软雅黑";-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{min-width: 1200px;position: relative;}
+a{text-decoration: none;outline: none;}
+a:focus{outline: none;}
+li{list-style-type: none;}
+/*头部样式*/
+header{width: 100%;float: left;}
+h1{float: left;}
+button{outline: none;}
+header button{background: red;width: 200px;height:60px;float: left;}
+header button:after{clear: both;}
+/*负责变化的div基本样式*/
+#big{width: 100px;height:100px;border: 2px solid black;float: left;transition: 0.5s;margin-top: 30px;}
+#big:after{clear: both;}
+/*蒙版样式*/
+#mask{position: fixed;width: 100%;z-index:200;height: 100%;opacity: 0.5;display: none;background: black;transform:0.2s;-webkit-animation-name: fadeIn; /*名称*/-webkit-animation-duration: 0.5s; /*持续时间*/-webkit-animation-iteration-count: 1; /*次数*/-webkit-animation-delay: 0s; /*延迟时间*/}
+/*定义一个淡入淡出*/
+@-webkit-keyframes fadeIn{0%{opacity: 0; /*初始状态 透明度为0*/}
+50%{opacity: 0; /*中间状态 透明度为0*/}
+100%{opacity: 0.7; /*结尾状态 透明度为1*/}}
+/*弹框样式*/
+#bomb_Box{display:block;border:6px solid #FCE5FC;position:fixed;z-index:999;background:#FFFFFF;width: 380px;height: 360px;top: 50%;left: 50%;margin-top: -1200px;margin-left: -140px;transform: 5s;/*transition: all 1s ease 0s;*/}
+/*第四个p标签文字居中*/
+#bomb_Box p:nth-child(4){text-align: center;}
+#bomb_Box p{margin: 12px 0;padding: 0 8px;height:52px;}
+/*p标签下按钮样式*/
+.p_1 button{width: 50px;height: 50px;cursor: pointer;border: 0;margin: 0 10px;float: left;}
+.p_1 button:hover{box-shadow: 0px 3px 8px 0px #5A5A5A;transition: box-shadow 0.3s;-moz-transition: box-shadow 0.3s;-webkit-transition: box-shadow 0.3s;transition: 0.3s;}
+.p_1 span{width: 130px;display: inline-block;float: left;height: 100%;line-height: 52px;}
+/*红*/
+#red{background: red;color: #FFFFFF;}
+/*蓝*/
+#blue{background: blue;color: #FFFFFF;}
+/*粉*/
+#pink{background: pink;color: #FFFFFF;}
+.p_btn{text-align: center;}
+.p_btn button{width: 100px;height: 40px;background: #58B7ED;border: 0;border-radius: 5px;margin: 20px 20px;cursor: pointer;font-size: 16px;}
+/*鼠标移入按钮渐变色*/
+.p_btn button:hover{transition:background-color 0.6s;background: #0083CB;color: #FFFFFF;}
+

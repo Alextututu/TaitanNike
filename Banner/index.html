@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+		<link rel="stylesheet" href="css/index.css" />
+		<title>轮播图</title>
+	</head>
+	<body>
+		<!--蒙版-->
+		<div id="Mask"></div>
+		<!--单独的弹框样式-->
+		<div id="Bomb_box">
+			<p>JavaScript提醒</p>
+			<p>已经到第一张啦~</p>
+			<button>确 定</button>
+		</div>
+		<!--整个大盒子-->
+		<div id="Box">
+		<!--切换按钮-->
+			<ul id="box_ul">
+				<li class="ul_li">循环切换</li>
+				<li>顺序切换</li>
+			</ul>
+			<!--轮播盒-->
+			<div id="Banner_box">
+				<!--显示图片-->
+				<img src="img/1.jpg" />
+				<!--显示多少张文本-->
+				<span id="How_much">1/5</span>
+				<!--左右箭头-->
+				<a id="left">&lt;</a>
+				<a id="right">&gt;</a>
+				<!--底部半透明描述-->
+				<p id="Text_describe">文字描述1</p>
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,298 @@
+*{margin: 0px auto;padding:0px;font-family:"微软雅黑";-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{min-width: 1200px;background: #E0E0E0;}
+a{text-decoration: none;outline: none;}
+a:focus{outline: none;}
+li{list-style-type: none;}
+/*button{float: left;}*/
+/*解决input按钮在Iphone上样式不一样的问题*/
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; } 
+
+
+
+/*============================第五种按钮样式效果============================*/
+/*
+button{
+	outline: none;
+	border: none;
+	position: fixed;
+	width: 300px;
+	height: 80px;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -40px;
+	padding: 10px;
+	background: #FFFFFF;
+	font-size: 24px;
+	transition: 800ms ease all;
+}
+button:hover{
+	color: #23CCFE;
+}*/
+
+/*在按钮之前和之后加入样式，可以理解为在上边框和下边框*/
+/*button:before,button:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 4px;
+	background: #23CCFE;
+	transition: 400ms ease all;
+}
+button:after{
+	right: 0;
+	top: 80px;
+	left: 0;
+	bottom: 0;
+	background: red;
+}
+
+
+button:hover:before,button:hover:after{
+	width: 100%;
+	transition: 800ms ease all;
+}
+*/
+
+/*==========================第四种按钮效果===============================*/
+/*.rainbow-button {
+  margin-top: 300px;
+  width:500px;
+  height:100px;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:4px;
+  display:block;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+}
+.rainbow-button:after {
+  content: "法克鱿";
+  line-height: 90px;
+  color: #000000;
+  font-size: 24px;
+  width:490px;
+  height:90px;
+  background-color:#FFFFDD;
+  display:block;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+  transition: 0.5s;
+  width:700px;
+}
+.rainbow-button:hover:after{
+	transition: 0.5s;
+	background: #FFEAEA;
+	opacity: 0.9;
+    width:690px;
+}
+
+@keyframes slidebg{
+  to {
+    background-position:500px;
+  }
+}*/
+
+
+/*============================第三种效果====================================*/
+/*button{
+  display: inline-block;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F5F5F5;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  box-shadow: inset 0 0 0 4px #F5F5F5, 0 0 1px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+button:before, button:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+button:before {
+  border-color: #FC5185 transparent;
+  -webkit-transform: skewX(-81deg);
+  transform: skewX(-81deg);
+}
+button:after {
+  border-color: transparent #FC5185;
+  -webkit-transform: skewY(40deg);
+  transform: skewY(40deg);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+button:hover {
+  color: #FC5185;
+}
+button:hover:before, button:hover:after{
+  -webkit-transform: none;
+  transform: none;
+}
+*/
+
+/*===========================第二种效果=================================*/
+/*.btn-draw {
+  width:300px;
+  height: 80px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 22px;
+  line-height: 60px;
+  color: #324577;
+  border-bottom: 2px solid #324577;
+  margin-left:-150px;
+  margin-top: -40px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; 
+}*/
+/*.btn-draw:before, .btn-draw:after {
+  content: '';
+  position: absolute;
+}
+.btn-draw:after {
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 2px;
+  background: #324577;
+  transform: translateY(100%);
+  transition: transform 0.2s ease-in-out;
+  transition-delay: 0.6s;
+}
+.btn-draw > span {
+  position: relative;
+  display: block;
+  padding: 0.5em;
+  color: inherit;
+}
+.btn-draw > span:before, .btn-draw > span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #324577;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-draw > span:before {
+  height: 2px;
+  width: 100%;
+  transform: translateX(100%);
+  transition-delay: 0.4s;
+}
+.btn-draw > span:after {
+  height: 100%;
+  width: 2px;
+  transform: translateY(-100%);
+  transition-delay: 0.2s;
+}
+.btn-draw:hover:after, .btn-draw:hover > span:before, .btn-draw:hover > span:after {
+  transform: translate(0, 0);
+}
+.btn-draw:hover:after {
+  transition-delay: 0s;
+}
+.btn-draw:hover > span:before {
+  transition-delay: 0.2s;
+}
+.btn-draw:hover > span:after {
+  transition-delay: 0.4s;
+}
+.btn-draw:hover {
+  color: #e4e4e2;
+  background-color: #324577;
+  transition-delay: 0.6s;
+}
+
+@font-face {
+  font-family: Doko-Book;
+  font-style: normal;
+  font-weight: 400;
+}*/
+
+/*========================第一种效果============================*/
+/*
+.btn {
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.625rem;
+  letter-spacing: 0.3em;
+  color: rgba(223,190,106,0.7);
+  border-radius: 0;
+  padding: 18px 80px 20px;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  background: -webkit-linear-gradient(180deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+  background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 0.625rem;
+  border: none;
+  border: 1px solid rgba(223,190,106,0.3);
+}
+.btn:hover {
+  color: #fff;
+  border: 1px solid rgba(223,190,106,0);
+  color: $white;
+  background-position: 99% 50%;
+}
+div.center {
+  text-align: center;
+  *zoom: 1;
+  width: auto;
+  max-width: 800px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  top: 50%;
+  margin-top: 300px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+div.center:before,
+div.center:after {
+  content: '';
+  display: table;
+}
+div.center:after {
+  clear: both;
+}*/

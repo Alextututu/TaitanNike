@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<!--<link rel="stylesheet" href="css/amazeui.min.css" />-->
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<title>百度云盘</title>
+	</head>
+	<body>
+		<header>
+			<!--顶部-->
+			<div id="Top">
+				<img src="img/logo.png" class="Logo" />
+				<p id="text1">秒味云盘</p>
+				<div class="Top_right">
+						<img id="head" src="img/12312.jpg" />
+						<i class="fa fa-angle-down fa-lg"></i>
+						<i class="fa fa-cog fa-lg"></i>
+				</div>
+			</div>
+			<!--菜单栏-->
+			<div id="Menu">
+				<ul class="Menu_ul">
+					<li><i class="fa fa-cloud-download"></i>下载</li>
+					<li><i class="fa fa-share-alt"></i>分享</li>
+					<li><i class="fa fa-arrows"></i>移动到</li>
+					<li><i class="fa fa-file-text-o"></i>重命名</li>
+					<li><i class="fa fa-trash"></i>删除</li>
+					<li><i class="fa fa-folder-open-o"></i>新建文件夹</li>
+					<li><i class="fa fa-refresh"></i></li>
+				</ul>
+				<!--右边两按钮-->
+				<div class="right_btn2">
+					<i class="fa fa-th-large"></i><i class="fa fa-angle-down fa-lg"></i>
+					<ul class="down_menu">
+						<li><i class="fa fa-clock-o"></i>按时间排序</li>
+						<li><i class="fa fa-sort-alpha-asc"></i>按字母排序</li>
+						<li><i class="fa fa-file-picture-o"></i>显示缩略图</li>
+					</ul>
+				</div>
+				<div class="right_btn"><i class="fa fa-tasks"></i></div>
+			</div>
+		</header>
+		
+		<article>
+		<!--左侧树状导航栏-->
+				<div class="Left_nav">
+					<ul id="accordion" class="accordion">
+						<li class="oppo Left_text">
+							<div class="link"><i class="fa fa-angle-down"></i><i class="fa fa-folder-open-o"></i>微云</div>
+							<ul class="submenu">
+								<li><a href="javascript:;" class="">发多少</a></li>
+								<li><a href="javascript:;" class="">1231</a></li>
+								<li><a href="javascript:;" class="">333</a></li>
+							</ul>
+						</li>
+						<li class="oppo">
+							<div class="link"><i class="fa fa-angle-down"></i><i class="fa fa-folder-open-o"></i>HTML课程</div>
+							<ul class="submenu">
+								<li><a href="javascript:;" class="">发多少</a></li>
+								<li><a href="javascript:;" class="">1231</a></li>
+								<li><a href="javascript:;" class="">333</a></li>
+							</ul>
+						</li>
+						<li class="oppo">
+							<div class="link"><i class="fa fa-angle-down"></i><i class="fa fa-folder-open-o"></i>JS课程</div>
+							<ul class="submenu">
+								<li><a href="javascript:;" class="">23123</a></li>
+								<li><a href="javascript:;" class="">1231</a></li>
+								<li><a href="javascript:;" class="">333</a></li>
+							</ul>
+						</li>
+						<li class="oppo">
+							<div class="link"><i class="fa fa-angle-down"></i><i class="fa fa-folder-open-o"></i>CSS课程</div>
+							<ul class="submenu">
+								<li><a href="javascript:;" class="">23123</a></li>
+								<li><a href="javascript:;" class="">1231</a></li>
+								<li><a href="javascript:;" class="">333</a></li>
+							</ul>
+						</li>
+						<li class="oppo">
+							<div class="link"><i class="fa fa-angle-down"></i><i class="fa fa-folder-open-o"></i>Angular 课程</div>
+							<ul class="submenu">
+								<li><a href="javascript:;" class="">23123</a></li>
+								<li><a href="javascript:;" class="">1231</a></li>
+								<li><a href="javascript:;" class="">333</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--右侧内容展示栏目-->
+				<div id="Right_Menu">
+					<!--顶部显示-->
+					<div class="Right_top">
+						<ul>
+							<li><div class="checkss"></div></li>
+							<li>微云</li>
+							<li><i class="fa fa-chevron-right"></i></li>
+							<li>JS课程</li>
+							<li><i class="fa fa-chevron-right"></i></li>
+							<li>CSS课程</li>
+							<li><i class="fa fa-chevron-right"></i></li>
+							<li>JS基础课程</li>
+						</ul>
+					</div>
+					<!--内容-->
+					<div class="Right_rotate">
+						<ul>
+							<li>
+								<p class="checkss1"></p>
+								<div class="text_img">JS基础课程</div>
+								<div class="icon">
+									<i class="fa fa-cloud-download"></i>
+									<i class="fa fa-share-alt"></i>
+									<i class="fa fa-arrows"></i>
+									<i class="fa fa-file-text-o"></i>
+									<i class="fa fa-trash"></i>
+								</div>
+								<div class="time"><span>2016-08-22  16:88</span></div>
+							</li>
+							<li>
+								<p class="checkss1"></p>
+								<div class="text_img">JS基础课程</div>
+								<div class="icon">
+									<i class="fa fa-cloud-download"></i>
+									<i class="fa fa-share-alt"></i>
+									<i class="fa fa-arrows"></i>
+									<i class="fa fa-file-text-o"></i>
+									<i class="fa fa-trash"></i>
+								</div>
+								<div class="time"><span>2016-08-22  16:88</span></div>
+							</li>
+							<li>
+								<p class="checkss1"></p>
+								<div class="text_img">JS基础课程</div>
+								<div class="icon">
+									<i class="fa fa-cloud-download"></i>
+									<i class="fa fa-share-alt"></i>
+									<i class="fa fa-arrows"></i>
+									<i class="fa fa-file-text-o"></i>
+									<i class="fa fa-trash"></i>
+									<!--<form>
+										<script>
+											var showFun=function showHello(count){
+												    for(var i=0;i<5;i++){
+													   document.write("<h2>Hello World</h2>");
+													}
+												};
+										</script>
+										<input type="button" name="btn" onclick="showFun(prompt('请输入',''))" style="width: 100px;height:20px:;" />
+									</form>-->
+								</div>
+								<div class="time"><span>2016-08-22  16:88</span></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+			<script src="js/index.js"></script>
+	</body>
+</html>

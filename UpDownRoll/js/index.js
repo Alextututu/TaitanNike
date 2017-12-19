@@ -1,0 +1,50 @@
+window.onload=function(){
+	//声明一个滚动值
+	var num=0;
+	//获得UL
+	var ULs=document.getElementById("RallUL");
+	//接收定时器的变量
+	var Timers=null;
+	document.getElementById("Up").onmousedown=function(){
+		//如果top值小于高度1300
+			if(ULs.offsetTop<=-1300){
+				//一直归为1300
+				ULs.style.top=-1300;
+				num=-1300;
+				return;
+			}else{
+				Timers=setInterval(function(){
+					if(ULs.offsetTop<=-1300){
+						ULs.style.top=-1300;
+						num=-1300;
+						clearInterval(Timers);
+					}
+					num-=2;
+					//滚动
+					ULs.style.top=num+"px";
+				},1);
+			}
+		
+	}
+	document.onmouseup=function(){
+		//鼠标松开的时候清除定时器
+		clearInterval(Timers);
+	};
+	document.getElementById("Down").onmousedown=function(){
+		if(ULs.offsetTop>=0){
+			ULs.style.top=0;
+			num=0;
+			return;
+		}else{
+			Timers=setInterval(function(){
+				if(ULs.offsetTop>=0){
+					ULs.style.top=0;
+					num=0;
+					clearInterval(Timers);
+				}
+				num+=2;
+				ULs.style.top=num+"px";
+			},1);
+		}
+	}
+};

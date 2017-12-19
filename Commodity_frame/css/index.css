@@ -1,0 +1,293 @@
+*{margin: 0px auto;padding:0px;font-family:"微软雅黑";-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{min-width: 1200px;background: #DE4A62;}
+a{text-decoration: none;outline: none;}
+a:focus{outline: none;}
+li{list-style-type: none;}
+button{float: left;}
+/*解决input按钮在Iphone上样式不一样的问题*/
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; } 
+
+
+#fuck{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 99999;
+	display: none;
+	color: #FFFFFF;
+	font-size: 54px;
+	line-height:600px;
+	text-align: center;
+}
+
+#table {
+	display: table;
+	width: 100%;
+	height: 100%;
+  background-color: #e5e5e5;
+}
+
+#centeralign {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+header{
+	width:1282px;
+	text-align: center;
+	margin-top: 200px;
+}
+header:after,.Shop_box:after{
+	clear: both;
+}
+/*4个div的样式*/
+.Shop_box{
+	background: #FFFFFF;
+	width: 300px;
+	height: 500px;
+	float: left;
+	margin: 16px 10px;
+	position: relative;
+}
+/*蒙版样式*/
+.Mask{
+	background: #000000;
+	opacity: 0.6;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	visibility: hidden;
+}
+/*盖章样式*/
+.Seal{
+	border: 6px solid #DE4A62;
+	border-radius:50%;
+	background: transparent;
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	z-index: 999;
+	top: 50%;
+	left:50%;
+	margin-top: -80px;
+	margin-left: -80px;
+	transform: scale(5);
+	transition: 0.2s;
+	visibility: hidden;
+}
+.Seal_two{
+	margin:9px;
+	border: 3px solid #DE4A62;
+	border-radius:50%;
+	background: transparent;
+	width: 130px;
+	height: 130px;
+	color: #DE4A62;
+	line-height: 130px;
+	transform: rotate(-30deg);
+}
+.Seal_two span{
+	color: #DE4A62;
+}
+.Seal_two span:nth-child(1){
+	position: absolute;
+	top: -44px;
+	left: 32px;
+	transform: rotate(-20deg);
+}
+.Seal_two span:nth-child(2){
+	position: absolute;
+	top: -52px;
+	left: 58px;
+}
+.Seal_two span:nth-child(3){
+	position: absolute;
+	top: -44px;
+	left:82px;
+	transform: rotate(20deg);
+}
+
+.Seal_two span:nth-child(4){
+	position: absolute;
+	bottom: -44px;
+	left: 32px;
+	transform: rotate(-20deg);
+}
+.Seal_two span:nth-child(5){
+	position: absolute;
+	bottom: -52px;
+	left: 58px;
+}
+.Seal_two span:nth-child(6){
+	position: absolute;
+	bottom: -42px;
+	left:82px;
+	transform: rotate(20deg);
+}
+
+
+.box_header{
+	background: #000000;
+	height:50px;
+	padding: 6px 14px;
+}
+.box_header input[type="text"]{
+	border: none;
+	background: black;
+	color:#DE4A62; 
+	outline: none;
+	padding: 6px;
+	border-bottom:2px solid #DE4A62;
+	float: left;
+	font-size: 18px;
+	width: 200px;
+}
+.box_header input[type="button"]{
+	color: #DE4A62;
+	border: none;
+	padding: 6px 10px;	
+	outline: none;
+	margin-left: 10px;
+	background: black;
+	font-size: 18px;
+	margin-top: 2px;
+}
+
+.box_Remaining_time{
+	width: 100%;
+	height: 60px;
+	padding: 10px 0;
+	line-height: 40px;
+	color: #676767;
+	margin-top: 20px;
+}
+.box_Remaining_time span{
+	height: 100%;
+	background: #DE4A62;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding: 4px 6px;
+	border-radius: 6px;
+}
+.box_Remaining_time span:nth-child(3),.box_Remaining_time span:nth-child(6){
+	background: transparent;
+	color: #DE4A62;
+	padding: 0;
+}
+
+.box_images{
+	width: 100%;
+	height: 210px;
+	text-align: center;
+	line-height: 210px;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.box_images img{
+	width: 200px;
+	height: 200px;
+}
+
+/*商品名称样式*/
+.box_commodity_name{
+	color: #000000;
+	font-size: 16px;
+	font-weight: 800;
+	padding: 20px 0;
+	overflow: hidden;
+	text-align: center;
+}
+.box_commodity_money{
+	font-size: 16px;
+	padding: 10px;
+	overflow: hidden;
+}
+.box_commodity_money span:nth-child(1){
+	color: #676767;
+}
+.box_commodity_money span i{
+	color: #DE4A62;
+	font-style: normal;
+}
+.box_commodity_money span:nth-child(2){
+	color: #DE4A62;
+	font-weight: 800;
+}
+
+
+/*底部样式*/
+footer{
+	width: 1260px;
+	float: left;
+	position:relative;
+ 	left:50%;
+ 	margin-left: -630px;
+ 	padding-bottom: 100px;
+}
+.footer_header{
+	background: #000000;
+	color: #FFFFFF;
+	font-size: 18px;
+	width: 100%;
+	padding: 10px 20px;
+	float: left;
+	cursor: pointer;
+}
+.footer_header p{
+	text-align: left;
+	width: 50%;
+	float: left;
+}
+.footer_header p:after,.footer_header:after{
+	clear: both;
+}
+.footer_Commodity_details{
+	/*height:0;*/
+	overflow: hidden;
+	float: left;
+	width:100%;
+	transition: all 0.5s;
+}
+.footer_Commodity_details ul{
+	width: 100%;
+}
+.footer_Commodity_details ul li{
+	width: 100%;
+	height: 80px;
+	background: #FFFFFF;
+}
+.footer_Commodity_details ul li:nth-child(2n+0){  /*从第0行开始起，每隔2行换色*/
+	background: #E8E8E8;
+}
+.footer_Commodity_details ul li p{
+	float: left;
+	line-height: 80px;
+	height: 100%;
+}
+.footer_Commodity_details ul li p:nth-child(1){
+	width: 50%;
+	padding-left: 20px;
+}
+.footer_Commodity_details ul li p:nth-child(3){
+	width: 20%;
+}
+.footer_Commodity_details ul li p:nth-child(2){
+	text-align: left;
+	color: #DE4A62;
+	width: 30%;
+	font-size:18px;
+	font-weight: 800;
+}
+.footer_Commodity_details ul li p img{
+	width:60px;
+	display: block;
+	margin-top: 10px;
+	height: 60px;
+	margin-right: 20px;
+}

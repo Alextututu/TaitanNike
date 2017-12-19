@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+		<title>查找替换</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+	</head>
+	<body>
+		<header>
+			<!--最外层box-->
+			<div id="Look_Box">
+				<!--文本域-->
+				<p>经医院诊断，摩托车驾驶员身上并无严重擦伤，但舌头上的肉被咬掉了不少，以后或将影响说话。本为飙车寻求刺激的他，不但为此付出了沉重的代价，还要为自己的愚蠢行为承担责任。据交警调查监控，因摩托车骑手付某夜间飙车追尾面包车和小轿车，目前 3 辆车损毁都较严重。更夸张的是，付某的摩托车是刚买的，牌照都还没上就上路了。因此，付某被要求承担事故全部责任，并且因为违法交通规定，被处以 200 元罚款并行政拘留 5 天。</p>
+				<!--三个功能按钮-->
+				<ul>
+					<li><i class="fa fa-times"></i><span>展 开</span></li>
+					<li><i class="fa fa-search"></i><span>查 找</span></li>
+					<li><i class="fa fa-exchange"></i><span>替 换</span></li>
+				</ul>
+			</div>
+		</header>
+		<!--底部实现功能栏-->
+		<footer>
+			<div id="Footer_box" class="footer_box">
+				<input type="button" value="查 找" />
+				<input type="button" value="替 换" />
+				<i class="fa fa-times"></i>
+			</div>
+			<div id="Footer_box2"  class="footer_box">
+				<input class="show" type="text" placeholder="请输入" />
+				<input class="hide" type="text" placeholder="请输入" />
+				<input class="hide" type="text" placeholder="请输入" />
+				<p><i class="fa fa-search"></i></p>
+			</div>
+		</footer>
+		<script src="js/index.js"></script>
+	</body>
+</html>
